@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+  text-align: center;
+  line-height: 2;
+  background-color: #fafafa;
+}
+
+.top-container {
+  height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bXklMjBkaWFyeXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-top: 100px;
+  z-index: 1;
+}
+
+.top-container::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: -1;
+  transition: 1s;
+}
+
+.top-container:hover {
+  opacity: 0.9;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  color: white;
+  font-size: 3.0rem;
+  font-family: 'Sacramento', cursive;
+  animation-name: myname;
+  animation-duration: 3s;
+  animation-delay: 0.5s;
+  width: fit-content;
+}
+
+@keyframes myname {
+  0% {
+    background-color: white;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    background-color: grey;
+    left: 0;
+    top: 0;
+  }
+  }
+  h2 {
+    font-size: 2.0rem;
+    font-family: 'Merriweather', serif;
+    color: #0f0f0f;
+    margin: 10px auto;
+  }
+  h3 {
+  font-size: 1.2rem;
+  font-family: 'Merriweather', serif;
+  color: #0f0f0f;
+  margin: 10px auto;
+}
+p {
+  font-size: 1.0rem;
+  font-family: 'Merriweather', serif;
+  color: black;
+  margin: 10px auto;
+}
+hr {
+  border-color: #798777;
+  border-style: hidden  double dotted;
+  border-width: thick;
+  width: 5%;
+  margin: 100px auto;
+  opacity: 0.8;
+}
+
+.name {
+  margin-top: 10px;
+}
+
+.blogbtn {
+  background: #333333;
+  background-image: -webkit-linear-gradient(top, #333333, #798777);
+  background-image: -moz-linear-gradient(top, #333333, #798777);
+  background-image: -ms-linear-gradient(top, #333333, #798777);
+  background-image: -o-linear-gradient(top, #333333, #798777);
+  background-image: -webkit-gradient(to bottom, #333333, #798777);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  height: 50px;
+  line-height: 50px;
+  color: #FFFFFF;
+  font-family: 'Merriweather', serif;
+  width: 200px;
+  font-size: 25px;
+  font-weight: 100;
+  padding: 5px;
+  -webkit-box-shadow: -2px -4px 10px 0 #798777;
+  -moz-box-shadow: -2px -4px 10px 0 #798777;
+  box-shadow: -2px -4px 10px 0 #798777;
+  text-shadow: 5px 5px 20px #798777;
+  border: solid #798777 0;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.blogbtn:hover {
+  border: dotted #000000 1px;
+  background: #798777;
+  background-image: -webkit-linear-gradient(top, #798777, #333333);
+  background-image: -moz-linear-gradient(top, #798777, #333333);
+  background-image: -ms-linear-gradient(top, #798777, #333333);
+  background-image: -o-linear-gradient(top, #798777, #333333);
+  background-image: -webkit-gradient(to bottom, #798777, #333333);
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.smileyimg {
+  width: 15%;
+  height: 15%;
+  margin-left: 5px;
+}
+.about {
+  margin: 50px auto;
+  width: 40%;
+}
+.aboutimg {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.passion {
+  margin: 50px auto;
+}
+.passion-row {
+  position: relative;
+  width: 40%;
+  margin: 100px auto;
+  text-align: left;
+}
+.danceimg {
+  border-radius: 50%;
+  width: 50%;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+}
+.webdevimg {
+  border-radius: 50%;
+  width: 50%;
+  height: auto;
+  float: right;
+  margin-left: 20px;
+}
+.hobbies {
+  margin: 50px auto;
+}
+.hobbiesimg {
+  width: 200px;
+  height: 200px;
+  border-radius: 0 0 25px 25px;
+  opacity: 0.8;
+}
+
+.headinddiv {
+  background-color: #9e9d89;
+  width: 200px;
+  margin: auto;
+  font-size: 150%;
+  border-radius: 25px 25px 0 0;
+}
+
+.hobbies-rowone {
+  position: relative;
+  width: 500px;
+  height: 550px;
+  margin: 100px auto;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.badmn {
+  margin: 0;
+  position: absolute;
+  top: 5px;
+  left: 25px;
+}
+
+.photod {
+  margin: 0;
+  position: absolute;
+  top: 5px;
+  right: 25px;
+}
+
+.readbksd {
+  margin: 0;
+  position: absolute;
+  bottom: 5px;
+  left: 25px;
+}
+ .watchtv {
+   margin: 0;
+   position: absolute;
+   bottom: 5px;
+   right: 25px;
+ }
+.contact {
+  margin: 50px auto;
+  width: 40%;
+}
+.contactbtn {
+   background: #272728;
+   background-image: -webkit-linear-gradient(top, #272728, #000000);
+   background-image: -moz-linear-gradient(top, #272728, #000000);
+   background-image: -ms-linear-gradient(top, #272728, #000000);
+   background-image: -o-linear-gradient(top, #272728, #000000);
+   background-image: -webkit-gradient(to bottom, #272728, #000000);
+   -webkit-border-radius: 25px;
+   -moz-border-radius: 25px;
+   border-radius: 25px;
+   height: 40px;
+   line-height: 50px;
+   color: #FFFFFF;
+   font-family: Arial;
+   width: 200px;
+   font-size: 20px;
+   font-weight: 0;
+   padding: 5px;
+   -webkit-box-shadow: 1px 1px 20px 0 #000000;
+   -moz-box-shadow: 1px 1px 20px 0 #000000;
+   box-shadow: 5px 5px 0 0 #000000;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #000000 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+   margin: 10px;
+}
+
+.contactbtn:hover {
+   border: solid #000000 1px;
+   background: #858585;
+   background-image: -webkit-linear-gradient(top, #858585, #7F7F80);
+   background-image: -moz-linear-gradient(top, #858585, #7F7F80);
+   background-image: -ms-linear-gradient(top, #858585, #7F7F80);
+   background-image: -o-linear-gradient(top, #858585, #7F7F80);
+   background-image: -webkit-gradient(to bottom, #858585, #7F7F80);
+   -webkit-border-radius: 14px;
+   -moz-border-radius: 14px;
+   border-radius: 14px;
+   text-decoration: none;
+}
+.bottom-container {
+  background-color: black;
+  padding: 20px;
+}
+.copyright {
+  margin-bottom: 0;
+  color: white;
+  font-size: 0.2em;
+}
+
+h4 {
+  color: grey;
+  word-spacing: 20px;
+  margin: 0;
+}
+.footerlink {
+  margin: 0 20px;
+  background-color: grey;
+  border-radius: 50%;
+  color: black;
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+  transition: 0.3s ease-in-out;
+}
+.footerlink:hover{
+  opacity: 0.9;
+ box-shadow: 0px 1px 3px 2px rgba(255, 255, 255, 0.9);
+  transform: scale(1.5);
+}
+.blogheading {
+  margin: 100px auto 0 auto;
+  color: white;
+  font-size: 3.0rem;
+  font-family: 'Sacramento', cursive;
+  animation-name: myname;
+  word-spacing: 20px;
+}
+.blogbody {
+  background-color: black;
+}
+.blogimgg {
+  margin: 50px auto 0;
+  width: 20%;
+  height: 20%;
+}
